@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Bootstrap-Form</title>
+</head>
+<body>
+  <section>    
+    <div class="container mt-5"  >
+
+        <div class="row justify-content-between main-row">
+            <div class="col-lg-6  bg-color full-width px-4 py-5 form-section">
+                <h3 class="form-head">Basic Details</h3>
+           
+                <label for="formFile" class="custom-upload w-100 d-flex flex-column align-items-center justify-content-center">
+                    <i class="bi bi-upload"></i>
+
+                    <h5>Upload Image</h5>
+                    <p>PNG,JPG Files are allowed</p>
+                <input class="form-control" type="file" id="formFile">
+                 </label>
+                <!-- Forms -->
+                <form>
+
+
+                    <div class="row gap-0">
+     
+                     <div class="col-lg-4 col-md-12 d-flex flex-column gap-2 ">
+                        <label for="exampleInputEmail1" class="form-label  required-field">Salutation</label>
+                        <select class="form-select form-select-lg" aria-label="Default select example">
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                     </div>
+     
+                     <div class="col-lg-4 col-md-6 d-flex flex-column gap-2 mt-4">
+                       <label for="first-name" class="form-label  required-field">First Name</label>
+                       <input class="form-control form-control-lg" type="text" required placeholder="First Name" aria-label=".form-control-lg example">
+                     </div>
+     
+                     <div class="col-lg-4 col-md-6 d-flex flex-column gap-2 mt-4">
+                         <label for="last-name" class="form-label  required-field">Last Name</label>
+                         <input class="form-control form-control-lg" type="text" placeholder="Last Name" aria-label=".form-control-lg example">
+                        
+                       </div>
+                    </div>
+
+
+
+
+
+                     <div class="row gap-0">
+                        <div class="col-md-6 col-sm-12 d-flex flex-column gap-2 ">
+                            <label for="exampleInputEmail1" class="form-label  required-field">Email address</label>
+                            <input type="email" class="form-control form-control-lg" placeholder="example@gmail.com" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-md-6 col-sm-12 d-flex flex-column gap-2 mt-4">
+                            <label for="last-name" class="form-label  required-field">Mobile Number</label>
+                            <input class="form-control form-control-lg" type="number" placeholder="Enter your 10 digit number" aria-label=".form-control-lg example">
+                        </div>
+                     </div>
+
+                     <div class="row  align-items-center gap-0">
+                        <div class="col-md-6 col-sm-12 d-flex flex-column gap-2">
+                            <label for="last-name" class="form-label  required-field">Date of Birth</label>
+                            <input class="form-control form-control-lg" type="date" placeholder="" aria-label=".form-control-lg example">
+                        </div>
+                        <div class="col-md-6 col-sm-12 d-flex flex-column gap-2 mt-4">
+                            <label for="last-name" class="form-label  required-field">Gender</label>
+                           <div class="row justify-content-start gap-3">
+                            <div class="form-check col-2 ms-3">
+
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  male
+                                </label>
+                              </div>
+
+                              <div class="form-check col-4 ms-3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                 Female
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+
+                    </div>
+
+
+
+                    <div class="row ">
+
+                      <div class="col-12 d-flex flex-column gap-2">
+                        <label for="last-name" class="form-label  required-field">Address</label>
+                     <input class="form-control form-control-lg" type="text" placeholder="Address" aria-label=".form-control-lg example">
+                    </div>
+                     </div>
+
+
+
+
+
+                     <div class="row ">
+                        <div class="col-lg-6 col-sm-12 d-flex flex-column gap-2">
+                                <label for="exampleInputEmail1" class="form-label  required-field">Country</label>
+                                <select class="form-select form-select-md" aria-label="Default select example">
+                                    <option selected>select country</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                             
+                        </div>
+                        <div class="col-lg-6 col-sm-12 d-flex flex-column gap-2">
+                            <label for="exampleInputEmail1" class="form-label  required-field">State</label>
+                            <select class="form-select form-select-md" aria-label="Default select example">
+                                <option selected>select state</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                        </div>
+                     </div>
+                      
+
+
+
+                     <div class="row ">
+                        <div class="col-lg-6 d-flex flex-column gap-2">
+                            <label for="last-name" class="form-label  required-field">City</label>
+                            <input class="form-control form-control-lg" type="text" placeholder="enter city" aria-label=".form-control-lg example">
+                             
+                        </div>
+                        <div class="col-lg-6 d-flex flex-column gap-2">
+                            <label for="last-name" class="form-label  required-field">Pin/Zip</label>
+                            <input class="form-control form-control-lg" type="text" placeholder="enter zip/pin" aria-label=".form-control-lg example">
+                        </div>
+                     </div>
+                 
+
+            </div>
+
+        </form>
+           
+            <div class="col-lg-6  bg-color full-width px-4 py-5 form-section">
+
+
+
+                <h3 class="form-head">Advanced Details</h3>
+
+                <div class="alert alert-warning" role="alert">
+                  <p>Sample warning</p>
+                </p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed fermentum felis. <p>
+                  </div>
+
+
+
+            <form >
+                  <div class="row gap-0">
+
+                    
+                    <div class="col-md-6 col-sm-12 d-flex flex-column gap-2 mt-4">
+                        <label for="customRange1" class="form-label  required-field">Hieght</label>
+                        <div class="d-flex align-items-center">
+                        <input type="range" class="form-range me-2"  value="0" min="0" max="300"  id="customRange1" onmousemove="rangeSlider(this.value)">
+                        <span class="badge text-bg-light py-2 px-4" id="range_value">0 <span>cm</span>
+                        </span>
+                    </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-sm-12 d-flex flex-column gap-2 mt-4">
+                        <label for="customRange1" class="form-label  required-field">Weight</label>
+
+                        <div class="d-flex align-items-center">
+                        <input type="range" class="form-range me-2" value="0" min="0" max="200"  id="customRange1" onmousemove="rangeSlider_w(this.value)">
+                        <span class="badge text-bg-light py-2 px-4 " id="range_value_w">0 <span>kg</span></span>
+                        </div>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="row   align-items-center">
+                    <div class="col-lg-5 col-sm-12 d-flex flex-column gap-2">
+                        <label for="exampleColorInput" class="form-label  required-field">Color picker</label>
+                        <input type="color" class="form-control form-control-color w-100" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                    </div>
+                    <div class="col-lg-7 col-sm-12 d-flex flex-column gap-2">
+
+                        <label for="exampleColorInput" class="form-label  required-field">Choose Template</label>
+
+                        <div class="d-flex gap-2 flex-wrap">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Template1
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Template2
+                            </label>
+                          </div>
+
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexChecChecked" checked>
+                            <label class="form-check-label" for="flexChecChecked">
+                                Template3
+                            </label>
+                          </div>
+                    </div>
+                </div>
+                  </div>
+
+
+
+                  <div class="row  ">
+                    <div class="col-12 d-flex flex-column gap-2">
+                        <label for="last-name" class="form-label ">Qualification</label>
+                     <input class="form-control form-control-lg" type="text" placeholder="Enter your qulification" aria-label=".form-control-lg example">
+                    </div>
+                  </div>
+
+
+                  <div class="row  ">
+                    <div class="col-12 d-flex flex-column gap-2">
+                        <label for="exampleFormControlTextarea1" class="form-label  required-field">About Yourself</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter here..." rows="12">
+                          
+                        </textarea>
+                    </div>
+                  </div>
+
+
+                  <div class="row pt-1">
+                    <div class="col-12">
+                        <input class="form-check-input" type="checkbox" value="" id="Accept">
+                        <label class="form-check-label" for="Accept">
+                            I Accept Terms & Conditions
+                        </label>
+                    </div>
+                  </div>
+      
+                </form>
+            </div>
+
+        </div>
+        
+        
+    </div>
+
+</section>
+
+
+    <section class="btns">
+        <div class="container d-flex justify-content-end bg-color p-4 ">
+            
+            <button class="btn btn-light p-3 me-2">cancel</button>
+            <button class="btn fill-btn py-3 px-4">Save Changes</button>
+
+        </div>
+    </section>
+
+    <script>
+      function rangeSlider(value) {
+        document.getElementById('range_value').textContent =value + " cm";
+        
+      }
+
+      function rangeSlider_w(value) {
+        document.getElementById('range_value_w').textContent = value + " kg" ;
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+   
+</body>
+</html>
